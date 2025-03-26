@@ -2,4 +2,5 @@
 
 Github Pages for you to access every exercice: /
 [First Page](https://realtoya.github.io/PersonalPages/FistHTML/) /
-[Second Page](https://realtoya.github.io/PersonalPages/SecondHTML/)
+[Second Page](https://realtoya.github.io/PersonalPages/SecondHTML/) /
+[Third Exercis](https://realtoya.github.io/PersonalPages/ThirdHTML/)
