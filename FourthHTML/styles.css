@@ -16,15 +16,15 @@ h1{
 
 #header
 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
 }
 
 
 #nav
 {
-padding: 10px 20px ;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px ;
 }
 
 #nav ul{
@@ -43,7 +43,7 @@ padding: 10px 20px ;
 }
 
 #header img{
-    width: 1em;
+    width: 1.5em;
 }
 
 .border1_debug{
