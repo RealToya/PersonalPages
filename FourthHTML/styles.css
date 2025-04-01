@@ -1,67 +1,109 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* padding e border estão incluidos quando calculadas height and weith*/
 }
 
 body{
-    font-family: 'Nexa', sans-serif;
+    font-family: 'VT323', monospace;
+    background-color: #1b1b1b;
+    color: #00FFCC; 
     text-align: center;
+    background-image: url(media/imgs/noisy-net.png)
 }
 
-h1{
-
-    font-size: 100%;
-
+#header {
+    background-color: #222;
+    padding: 20px;
 }
 
-#header
-{
-    justify-content: center;
-}
-
-
-#nav
-{
+#nav {
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px ;
+    align-items: center;
 }
 
-#nav ul{
-    text-align: center;
+#nav h1{
+    font-size: 2rem;
 }
 
-#nav ul li
-{
+#nav ul {
+    list-style: none;
+}
+
+#nav ul li {
     display: inline;
     margin: 10px;
 }
 
-#nav ul li a
-{
+#nav ul li a {
     text-decoration: none;
+    color: #00FFCC;
 }
 
-#header img{
-    width: 1.5em;
+#nav img{
+    max-width: 30px;
+    max-height: 30px;
 }
 
-.border1_debug{
-    background-color: blueviolet;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px;
 }
 
-.border2_debug{
-    background-color: rgb(140, 236, 29);
+.grid-container img {
+    width: 100%;
+    border: 2px solid #00FFCC;
 }
 
-.border3_debug{
-    background-color: rgb(76, 86, 131);
+.retro-button {
+    background: linear-gradient(to bottom, #E0E0E0, #A0A0A0);
+    border: 3px solid #222;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-family: 'VT323', monospace;
+    cursor: pointer;
+    transition: transform 0.1s;
 }
 
-.border4_debug{
-    background-color: rgb(88, 12, 54);
+.retro-button:hover {
+    transform: scale(1.05);
 }
 
-.border5_debug{
-    background-color: rgb(125, 212, 25);
+.scroll_section {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.review {
+    background: #444;
+    padding: 10px;
+    border: 2px solid #00FFCC;
+}
+
+#faq {
+    background-color: #222;
+    padding: 20px;
+}
+
+.faq-item {
+    background: #333;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid #00FFCC;
+}
+
+@keyframes glitch {
+    0% { text-shadow: 2px 2px red; }
+    50% { text-shadow: -2px -2px blue; }
+    100% { text-shadow: 2px 2px red; }
+}
+
+.glitch {
+    animation: glitch 0.2s infinite alternate;
 }
