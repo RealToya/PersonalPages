@@ -171,7 +171,7 @@ p span
     background-color: #222;
     padding: 20px;
     border: 3px solid #00FFCC;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -184,7 +184,7 @@ p span
     background: #333;
     padding: 10px;
     margin: auto;
-    max-width: 60%;
+    max-width: 50%;
     border: 2px solid #00FFCC;
 }
 
