@@ -9,18 +9,33 @@ body{
     background-color: #1b1b1b;
     color: #00FFCC; 
     text-align: center;
-    background-image: url(media/imgs/noisy-net.png)
+    background-image: url(media/imgs/noisy-net.png);
+    background-size: cover;
+}
+
+#middle-text {
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: 120px auto;
+}
+
+p span
+{
+    color: #8F87F1;
 }
 
 #header {
     background-color: #222;
     padding: 20px;
+    border-bottom: 5px solid #00FFCC;
 }
 
 #nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1440px;
+    margin: auto; /* mantem as margens na mesma escala com o max-width */
 }
 
 #nav h1{
@@ -29,21 +44,78 @@ body{
 
 #nav ul {
     list-style: none;
+    display: flex;
+    gap: 20px; /* "gap" entre os ul */
 }
 
 #nav ul li {
     display: inline;
-    margin: 10px;
 }
 
 #nav ul li a {
     text-decoration: none;
     color: #00FFCC;
+    font-size: 1.2rem;
+}
+
+#nav ul li a:hover {
+    color: #FFFFFF;
 }
 
 #nav img{
     max-width: 30px;
     max-height: 30px;
+    filter: drop-shadow(1px 1px 0px #00FFCC);
+}
+
+.section_show {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 1000px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid #00FFCC;
+    box-shadow: 5px 5px 0px #222;
+}
+
+.section_show h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.images-top img {
+    width: 15%;
+    height: auto;
+}
+
+.info-card{
+    display: flex;
+    gap: 15px;
+}
+
+.message {
+    background-color: #333;
+    color: #00FFCC;
+    padding: 15px;
+    margin: 15px 0;
+    border: 2px solid #00FFCC;
+    box-shadow: 4px 4px 0px #222;
+    font-size: 1rem;
+    flex: 1; /* height será constante */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hyperlink {
+    color: #00FFCC;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hyperlink:hover {
+    color: #FFFFFF;
 }
 
 .grid-container {
@@ -65,11 +137,12 @@ body{
     text-transform: uppercase;
     font-family: 'VT323', monospace;
     cursor: pointer;
-    transition: transform 0.1s;
+    box-shadow: 4px 4px 0px #222;
 }
 
 .retro-button:hover {
     transform: scale(1.05);
+    box-shadow: 6px 6px 0px #000;
 }
 
 .scroll_section {
@@ -77,25 +150,54 @@ body{
     overflow-x: auto;
     gap: 10px;
     padding: 10px;
-    white-space: nowrap;
+    scrollbar-width: thin;
+    scrollbar-color: #00FFCC #3a3a3a;
+    gap: 20px;
 }
 
 .review {
     background: #444;
     padding: 10px;
     border: 2px solid #00FFCC;
+    min-width: 400px;
+    font-size: 1.2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #faq {
     background-color: #222;
     padding: 20px;
+    border: 3px solid #00FFCC;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#faq h1
+{
+    margin-bottom: 20px;
 }
 
 .faq-item {
     background: #333;
     padding: 10px;
-    margin: 5px;
+    margin: auto;
+    max-width: 60%;
     border: 2px solid #00FFCC;
+}
+
+.faq-item:hover {
+    background: #444;
+}
+
+footer {
+    background: #111;
+    color: #00FFCC;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #00FFCC;
 }
 
 @keyframes glitch {
