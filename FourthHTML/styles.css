@@ -175,6 +175,14 @@ p span
     margin: auto;
 }
 
+.faqdescription
+{
+    display: none;
+    font-style: italic;
+    margin-top: 5px;
+    font-size: 0.8rem;
+}
+
 #faq h1
 {
     margin-bottom: 20px;
@@ -186,6 +194,7 @@ p span
     margin: auto;
     max-width: 50%;
     border: 2px solid #00FFCC;
+    font-size: 1.2rem;
 }
 
 .faq-item:hover {
