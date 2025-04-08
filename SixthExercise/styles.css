@@ -1,0 +1,30 @@
+body 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    transition: background-color 0.4s ease-in-out;
+    background-color: #000000;
+}
+
+#buttonswitch
+{
+    margin: auto;
+}
+
+#maincontainer {
+    text-align: center;
+}
+
+.Lamp img {
+    width: 200px;
+    margin-bottom: 20px;
+    margin-top: 100%;
+}
+
+#buttonswitch {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
