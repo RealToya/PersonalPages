@@ -8,7 +8,7 @@ function OpenFAQ(faqnum)
     if (faqnum.getElementsByClassName("faqdescription").length > 0) {
         document.querySelectorAll(".faqdescription").forEach(description => {description.style.display = "none";}); //Dá display none a todos os elementos para depois dar block ao objeto em "Hover"
 
-        faqnum.getElementsByClassName("faqdescription")[0].style.display = "block"; //Utilizando o numero dado por cada elemento aceder ao elemento de display.
+        faqnum.getElementsByClassName("faqdescription")[0].style.display = "block"; //O numero dado por cada elemento para aceder ao elemento de display correto
     }
 }
 

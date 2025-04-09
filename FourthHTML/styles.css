@@ -171,7 +171,7 @@ p span
     height: auto;
 }
 
-.info-card{
+.info_card{
     display: flex;
     gap: 15px;
     margin-top: 20px;
@@ -509,7 +509,7 @@ footer .copyright {
     100% { text-shadow: 2px 2px red; }
 }
 
-@keyframes input-glow {
+@keyframes input_terminal {
     0% { box-shadow: 0 0 10px #00FFCC; }
     100% { box-shadow: 0 0 20px #8F87F1; }
 }
