@@ -166,11 +166,6 @@ p span
     animation: input_terminal 1.5s infinite alternate;
 }
 
-.images-top img {
-    width: 15%;
-    height: auto;
-}
-
 .info_card{
     display: flex;
     gap: 15px;
