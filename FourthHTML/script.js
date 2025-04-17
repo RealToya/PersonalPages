@@ -10,5 +10,5 @@ function OpenFAQ(faqnum)
 
         faqnum.getElementsByClassName("faqdescription")[0].style.display = "block"; //O numero dado por cada elemento para aceder ao elemento de display correto
     }
-}
+} 
 
